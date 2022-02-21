@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SignIn/SignUp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/signin.css">
+</head>
+
+<body>
+  <div class="clickbait">
+    <div class="cb">
+      <h1 style="display:inline;">CLICK BAIT</h1>
+      <p>Get what your eyes want</p>
+    </div>
+  </div>
+  <div class="loginSignup">
+    <div id="login">
+      <h2>Login</h2>
+      {% if msg %}
+                <p class="error">Invalid email address or password  </p>
+                <p class="error">
+                    Please try again!</p>
+                {% endif %}
+      <form action="/login"  method="post">
+        <input  type="email" placeholder="Email" name="email" value=""><br>
+        <input id="pwd" type="password" placeholder="Password" name="password" value=""><br>
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <a  href="/register">Create new account</a>
+    </div>
+</body>
+
+</html>

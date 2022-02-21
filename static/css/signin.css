@@ -1,0 +1,75 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+.clickbait {
+  position: relative;
+  color: white;
+  background-image: linear-gradient(to right, #8C0343, #fa054a);
+  float: left;
+  width: 70%;
+  height: 100%;
+  overflow: auto;
+}
+
+.cb {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loginSignup {
+  font-family: 'Fjalla One', sans-serif;
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+
+#login {
+  width: 80%;
+  margin: auto;
+}
+
+#signup {
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+input {
+  font-size: 1em;
+  height: 50px;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 25px;
+  background: #8C0343;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
+.btn:hover {
+  background: #fa054a;
+}
+
+.change {
+  color: #8C0343;
+  background: none;
+  border: none;
+}
